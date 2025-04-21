@@ -1,9 +1,13 @@
 import React from 'react';
-import tictactoeboard from './tictactoeboard';
+import './main.css';
 
 function App() {
-  return null
-
+  return (
+    <>
+      <div id = "option1"></div>
+      <div id = "option2"></div>
+    </>
+  )
 }
 
 export default App;
