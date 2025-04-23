@@ -26,14 +26,14 @@ function App() {
   let [img2, setImg2] = useState(teams[1].logo);
   let [txt1, setTxt1] = useState(teams[0].name);
   let [txt2, setTxt2] = useState(teams[1].name);
-  
+
   return (
     <>
       <script defer language="JavaScrirpt" src = "Algorithm.js" />
         <div id = "options">
-          <div class = "option"><img src = {img1}></img><p>{txt1}</p><hr /></div>
+          <button class = "option"><img src = {img1}></img><p>{txt1}</p><hr /></button>
           <p id = "or">or</p>
-          <div class = "option"><img src = {img2}></img><p>{txt2}</p><hr /></div>
+          <button class = "option"><img src = {img2}></img><p>{txt2}</p><hr /></button>
         </div>
     </>
   )
