@@ -1,19 +1,20 @@
-import React from 'react';
-import './main.css';
+import React, { useState } from 'react';
 import data from "./nba.json";
-
-document.getElementById("option1").setAttribute("src", data[0].logo);
-document.getElementById("option1txt").innerHTML = data[0].team;
-document.getElementById("option2").setAttribute("src", data[1].logo);
-document.getElementById("option2txt").innerHTML = data[1].team;
+import './main.css';
 
 function App() {
+  let [img1, setImg1] = useState(data[0].logo);
+  let [img2, setImg2] = useState(data[1].logo);
+  let [txt1, setTxt1] = useState(data[0].team);
+  let [txt2, setTxt2] = useState(data[1].team);
   return (
     <>
-    <div id = "options">
-      <div class = "option"><img id = "option1"></img><p id = "option1txt"></p></div>
-      <div class = "option"><img id = "option2"></img><p id = "option2txt"></p></div>
-    </div>
+      <script defer language="JavaScrirpt" src = "Algorithm.js" />
+        <div id = "options">
+          <div class = "option"><img src = {img1}></img><p>{txt1}</p><hr /></div>
+          <p id = "or">or</p>
+          <div class = "option"><img src = {img2}></img><p>{txt2}</p><hr /></div>
+        </div>
     </>
   )
 }
