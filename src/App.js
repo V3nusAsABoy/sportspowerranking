@@ -36,6 +36,8 @@ let [txt2, setTxt2] = useState(teams[current2].name);
     teams[current1].betterThan.push(teams[current2].name);
     teams[current2].worseThan.concat(teams[current1].worseThan);
     teams[current2].worseThan.push(teams[current1].name);
+    addToBetter(teams[current2].name,teams[current1].name);
+    addToWorse(teams[current2].name,teams[current1].name);
     next();
   }
 
@@ -44,15 +46,33 @@ let [txt2, setTxt2] = useState(teams[current2].name);
     teams[current2].betterThan.push(teams[current1].name);
     teams[current1].worseThan.concat(teams[current2].worseThan);
     teams[current1].worseThan.push(teams[current2].name);
+    addToBetter(teams[current1].name,teams[current2].name);
+    addToWorse(teams[current1].name,teams[current2].name);
     next();
   }
 
+  function addToWorse(worseTeam, betterTeam){
+    for(let i = 0; i < 30; i++){
+      if(teams[i].betterThan.includes(betterTeam) && !(teams[i].betterThan.includes(worseTeam))){
+        teams[i].betterThan.push(worseTeam);
+      }
+    }
+  }
+
+  function addToBetter(worseTeam, betterTeam){
+    for(let i = 0; i < 30; i++){
+      if(teams[i].worseThan.includes(worseTeam) && !(teams[i].worseThan.includes(betterTeam))){
+        teams[i].worseThan.push(betterTeam);
+      }
+    }
+  }
+
   function next(){
+    current2++;
     if(current2 == 30){
       current2 = 0;
       current1++;
     } else {
-      current2++;
       if(current2 == current1){
         next();
       }
@@ -73,7 +93,9 @@ let [txt2, setTxt2] = useState(teams[current2].name);
   }
 
   function theEnd(){
-    console.log("AAAAAAA (thats me yellin)")
+    for(let i = 0; i < 30; i++){
+      console.log(`${teams[i].name}: ${teams[i].betterThan.length}`)
+    }
   }
 
   return (
