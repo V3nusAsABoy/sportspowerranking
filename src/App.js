@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import data from "./nba.json";
 import './main.css';
 
@@ -25,6 +25,9 @@ let current1 = 0;
 let current2 = 1;
 
 function App() {
+
+const [showResults, setShowResults] = useState(false);
+const [hideOptions, setHideOptions] = useState(true);
 
 let [img1, setImg1] = useState(teams[current1].logo);
 let [img2, setImg2] = useState(teams[current2].logo);
@@ -81,6 +84,7 @@ Array.prototype.unique = function() {
     current2++;
     if(current2 == 30){
       current2 = 0;
+
       current1++;
     } else {
       if(current2 == current1){
@@ -88,7 +92,7 @@ Array.prototype.unique = function() {
       }
     }
     if(current1 == 29){
-      theEnd();
+      TheEnd();
     } else {
       if(!(teams[current1].betterThan.includes(teams[current2].name) || teams[current1].worseThan.includes(teams[current2].name) 
       || teams[current2].betterThan.includes(teams[current1].name) || teams[current2].worseThan.includes(teams[current1].name))){
@@ -102,19 +106,54 @@ Array.prototype.unique = function() {
     }
   }
 
-  function theEnd(){
-    for(let i = 0; i < 30; i++){
-      console.log(`${teams[i].name}: ${teams[i].betterThan.length}`)
-    }
+  function TheEnd(){
+    setShowResults(true);
+    setHideOptions(false);
   }
 
   return (
     <>
+      { hideOptions && (
         <div id = "options">
           <button class = "option" onClick={firstOption}><img src = {img1}></img><p>{txt1}</p><hr /></button>
           <p id = "or">or</p>
           <button class = "option" onClick={secondOption}><img src = {img2}></img><p>{txt2}</p><hr /></button>
         </div>
+      )}
+      { showResults && (
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      )}
     </>
   )
 }
