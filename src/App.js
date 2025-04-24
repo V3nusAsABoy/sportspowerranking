@@ -110,7 +110,6 @@ Array.prototype.unique = function() {
 
   return (
     <>
-      <script defer language="JavaScrirpt" src = "Algorithm.js" />
         <div id = "options">
           <button class = "option" onClick={firstOption}><img src = {img1}></img><p>{txt1}</p><hr /></button>
           <p id = "or">or</p>
