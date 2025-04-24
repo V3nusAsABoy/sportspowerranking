@@ -26,8 +26,8 @@ let current2 = 1;
 
 function App() {
 
-const [showResults, setShowResults] = useState(false);
-const [hideOptions, setHideOptions] = useState(true);
+const [results, setResults] = useState(false);
+const [options, setOptions] = useState(true);
 
 let [img1, setImg1] = useState(teams[current1].logo);
 let [img2, setImg2] = useState(teams[current2].logo);
@@ -107,51 +107,57 @@ Array.prototype.unique = function() {
   }
 
   function TheEnd(){
-    setShowResults(true);
-    setHideOptions(false);
+
+    teams.sort(function(a, b){
+      return (a.betterThan.length - b.betterThan.length)
+    });
+
+    setResults(true);
+    setOptions(false);
+
   }
 
   return (
     <>
-      { hideOptions && (
+      { options && (
         <div id = "options">
           <button class = "option" onClick={firstOption}><img src = {img1}></img><p>{txt1}</p><hr /></button>
           <p id = "or">or</p>
           <button class = "option" onClick={secondOption}><img src = {img2}></img><p>{txt2}</p><hr /></button>
         </div>
       )}
-      { showResults && (
+      { results && (
         <ol>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>{`${teams[29].name}`}</li>
+          <li>{`${teams[28].name}`}</li>
+          <li>{`${teams[27].name}`}</li>
+          <li>{`${teams[26].name}`}</li>
+          <li>{`${teams[25].name}`}</li>
+          <li>{`${teams[24].name}`}</li>
+          <li>{`${teams[23].name}`}</li>
+          <li>{`${teams[22].name}`}</li>
+          <li>{`${teams[21].name}`}</li>
+          <li>{`${teams[20].name}`}</li>
+          <li>{`${teams[19].name}`}</li>
+          <li>{`${teams[18].name}`}</li>
+          <li>{`${teams[17].name}`}</li>
+          <li>{`${teams[16].name}`}</li>
+          <li>{`${teams[15].name}`}</li>
+          <li>{`${teams[14].name}`}</li>
+          <li>{`${teams[13].name}`}</li>
+          <li>{`${teams[12].name}`}</li>
+          <li>{`${teams[11].name}`}</li>
+          <li>{`${teams[10].name}`}</li>
+          <li>{`${teams[9].name}`}</li>
+          <li>{`${teams[8].name}`}</li>
+          <li>{`${teams[7].name}`}</li>
+          <li>{`${teams[6].name}`}</li>
+          <li>{`${teams[5].name}`}</li>
+          <li>{`${teams[4].name}`}</li>
+          <li>{`${teams[3].name}`}</li>
+          <li>{`${teams[2].name}`}</li>
+          <li>{`${teams[1].name}`}</li>
+          <li>{`${teams[0].name}`}</li>
         </ol>
       )}
     </>
