@@ -31,10 +31,22 @@ let [img2, setImg2] = useState(teams[current2].logo);
 let [txt1, setTxt1] = useState(teams[current1].name);
 let [txt2, setTxt2] = useState(teams[current2].name);
 
+Array.prototype.unique = function() {
+  var a = this.concat();
+  for(var i=0; i<a.length; ++i) {
+      for(var j=i+1; j<a.length; ++j) {
+          if(a[i] === a[j])
+              a.splice(j--, 1);
+      }
+  }
+
+  return a;
+};
+
   function firstOption(){
-    teams[current1].betterThan.concat(teams[current2].betterThan);
+    teams[current1].betterThan.concat(teams[current2].betterThan).unique();
     teams[current1].betterThan.push(teams[current2].name);
-    teams[current2].worseThan.concat(teams[current1].worseThan);
+    teams[current2].worseThan.concat(teams[current1].worseThan).unique();
     teams[current2].worseThan.push(teams[current1].name);
     addToBetter(teams[current2].name,teams[current1].name);
     addToWorse(teams[current2].name,teams[current1].name);
@@ -42,18 +54,16 @@ let [txt2, setTxt2] = useState(teams[current2].name);
   }
 
   function secondOption(){
-    teams[current2].betterThan.concat(teams[current1].betterThan);
+    teams[current2].betterThan = teams[current2].betterThan.concat(teams[current1].betterThan).unique();
     teams[current2].betterThan.push(teams[current1].name);
-    teams[current1].worseThan.concat(teams[current2].worseThan);
+    teams[current1].worseThan = teams[current1].worseThan.concat(teams[current2].worseThan).unique();
     teams[current1].worseThan.push(teams[current2].name);
-    addToBetter(teams[current1].name,teams[current2].name);
-    addToWorse(teams[current1].name,teams[current2].name);
     next();
   }
 
   function addToWorse(worseTeam, betterTeam){
     for(let i = 0; i < 30; i++){
-      if(teams[i].betterThan.includes(betterTeam) && !(teams[i].betterThan.includes(worseTeam))){
+      if((teams[i].betterThan.includes(betterTeam)) && !(teams[i].betterThan.includes(worseTeam))){
         teams[i].betterThan.push(worseTeam);
       }
     }
