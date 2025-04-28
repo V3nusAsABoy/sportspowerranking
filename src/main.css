@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 body{
     background-color:rgb(0, 24, 76);
 }
@@ -55,18 +57,29 @@ hr{
 
 ol{
     color:white;
+    padding:1em;
+    margin:1em;
+    border: 0.1em solid white;
+    list-style-position: inside;
+    background-color: rgb(100, 100, 255);
 }
 
 #ol{
     display: flex;
-    background-color: blue;
-    width:30em;
+    background-color: rgb(9, 9, 253);
+    width:fit-content;
     margin-left: auto;
     margin-right:auto;
+    padding:2em;
+    border-radius:1em;
+}
+
+#ol img{
+    width:1em;
 }
 
 #ol li{
-    font-size:1.3em;
+    font-size:1.7em;
     margin-top:0.3em;
-    margin-left: 2em;
+    font-family: 'Oswald';
 }
