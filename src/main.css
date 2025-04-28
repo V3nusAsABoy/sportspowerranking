@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(0, 32, 100);
+    background-color:rgb(0, 24, 76);
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -9,7 +9,7 @@ h1,h2,h3,h4,h5,h6,p{
 .option{
     display:flex;
     flex-direction: column;
-    background:rgb(0, 0, 33);
+    background:rgb(0, 0, 76);
     padding:5em;
     border-radius: 5em;
     border: solid 0.1em white;
@@ -17,18 +17,18 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .option:hover{
-    background: rgb(98, 98, 119);
+    background: rgb(169, 169, 179);
 }
 
 .option:hover > img{
-    background-color: rgb(104, 104, 140);
+    background-color: rgb(231, 231, 231);
 }
 
 .option img{
     width:25em;
     height:25em;
-    border: solid white 0.1em;
-    background-color: rgb(0, 0, 55);
+    border: solid white 0.5em;
+    background-color: rgb(193, 213, 255);
     padding:0.5em;
 }
 
@@ -55,4 +55,18 @@ hr{
 
 ol{
     color:white;
+}
+
+#ol{
+    display: flex;
+    background-color: blue;
+    width:30em;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#ol li{
+    font-size:1.3em;
+    margin-top:0.3em;
+    margin-left: 2em;
 }
