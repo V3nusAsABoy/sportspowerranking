@@ -55,41 +55,29 @@ hr{
     width:10em;
 }
 
-#ol{
-    display: flex;
-    background-color: rgb(0, 0, 76);
-    width:fit-content;
-    margin-left: auto;
-    margin-right:auto;
-    padding:2em;
-    border-radius:1em;
-    border: solid white 0.1em;
-}
-
-#lists{
-    display: flex;
-    color:rgb(0, 0, 76);
-    border: 0.1em solid white;
-    width:30em;
-    margin-left: auto;
-    margin-right:auto;
-    list-style-position: inside;
-    background-color: rgb(193, 213, 255)
-}
-
-#lists ol{
-    width:fit-content;
+ol{
+    display:flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
 }
+ ol img{
+    width: 25%;
+    align-self: center;
+ }
 
-#lists img{
-    width:1em;
-}
-
-#lists li{
-    font-size:2em;
-    margin-top:0.3em;
+ol li{
+    font-size:4em;
     font-family: 'Oswald';
-    border-bottom: solid rgba(0, 0, 0, 0.26) 0.05em;
+    margin:1em;
+}
+
+h1{
+    font-size:6em;
+    font-family: "oswald";
+    text-align: center;
+    margin:0.1em;
 }
