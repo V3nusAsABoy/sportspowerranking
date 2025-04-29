@@ -63,6 +63,7 @@ ol{
     width:80%;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 1em 1em rgb(185, 96, 0);
 }
  ol img{
     width: 25%;
