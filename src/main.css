@@ -55,31 +55,41 @@ hr{
     width:10em;
 }
 
-ol{
-    color:white;
-    padding:1em;
-    margin:1em;
-    border: 0.1em solid white;
-    list-style-position: inside;
-    background-color: rgb(100, 100, 255);
-}
-
 #ol{
     display: flex;
-    background-color: rgb(9, 9, 253);
+    background-color: rgb(0, 0, 76);
     width:fit-content;
     margin-left: auto;
     margin-right:auto;
     padding:2em;
     border-radius:1em;
+    border: solid white 0.1em;
 }
 
-#ol img{
+#lists{
+    display: flex;
+    color:rgb(0, 0, 76);
+    border: 0.1em solid white;
+    width:30em;
+    margin-left: auto;
+    margin-right:auto;
+    list-style-position: inside;
+    background-color: rgb(193, 213, 255)
+}
+
+#lists ol{
+    width:fit-content;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lists img{
     width:1em;
 }
 
-#ol li{
-    font-size:1.7em;
+#lists li{
+    font-size:2em;
     margin-top:0.3em;
     font-family: 'Oswald';
+    border-bottom: solid rgba(0, 0, 0, 0.26) 0.05em;
 }

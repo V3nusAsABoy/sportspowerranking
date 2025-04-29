@@ -127,42 +127,40 @@ Array.prototype.unique = function() {
         </div>
       )}
       { results && (
-        <div id = "ol">
-          <ol>
-            <li><img src={`${teams[29].logo}`} />{` ${teams[29].name} `}</li>
-            <li><img src={`${teams[28].logo}`} />{` ${teams[28].name}`}</li>
-            <li><img src={`${teams[27].logo}`} />{` ${teams[27].name}`}</li>
-            <li><img src={`${teams[26].logo}`} />{` ${teams[26].name}`}</li>
-            <li><img src={`${teams[25].logo}`} />{` ${teams[25].name}`}</li>
-            <li><img src={`${teams[24].logo}`} />{` ${teams[24].name}`}</li>
-            <li><img src={`${teams[23].logo}`} />{` ${teams[23].name}`}</li>
-            <li><img src={`${teams[22].logo}`} />{` ${teams[22].name}`}</li>
-            <li><img src={`${teams[21].logo}`} />{` ${teams[21].name}`}</li>
-            <li><img src={`${teams[20].logo}`} />{` ${teams[20].name}`}</li>
-            <li><img src={`${teams[19].logo}`} />{` ${teams[19].name}`}</li>
-            <li><img src={`${teams[18].logo}`} />{` ${teams[18].name}`}</li>
-            <li><img src={`${teams[17].logo}`} />{` ${teams[17].name}`}</li>
-            <li><img src={`${teams[16].logo}`} />{` ${teams[16].name}`}</li>
-            <li><img src={`${teams[15].logo}`} />{` ${teams[15].name}`}</li>
-          </ol>
-          <ol start="16">
-            <li><img src={`${teams[14].logo}`} />{` ${teams[14].name}`}</li>
-            <li><img src={`${teams[13].logo}`} />{` ${teams[13].name}`}</li>
-            <li><img src={`${teams[12].logo}`} />{` ${teams[12].name}`}</li>
-            <li><img src={`${teams[11].logo}`} />{` ${teams[11].name}`}</li>
-            <li><img src={`${teams[10].logo}`} />{` ${teams[10].name}`}</li>
-            <li><img src={`${teams[9].logo}`} />{` ${teams[9].name}`}</li>
-            <li><img src={`${teams[8].logo}`} />{` ${teams[8].name}`}</li>
-            <li><img src={`${teams[7].logo}`} />{` ${teams[7].name}`}</li>
-            <li><img src={`${teams[6].logo}`} />{` ${teams[6].name}`}</li>
-            <li><img src={`${teams[5].logo}`} />{` ${teams[5].name}`}</li>
-            <li><img src={`${teams[4].logo}`} />{` ${teams[4].name}`}</li>
-            <li><img src={`${teams[3].logo}`} />{` ${teams[3].name}`}</li>
-            <li><img src={`${teams[2].logo}`} />{` ${teams[2].name}`}</li>
-            <li><img src={`${teams[1].logo}`} />{` ${teams[1].name}`}</li>
-            <li><img src={`${teams[0].logo}`} />{` ${teams[0].name}`}</li>
-          </ol>
-        </div>
+          <div id = "lists">
+            <ol>
+              <li><img src={`${teams[29].logo}`} />{` ${teams[29].name} `}</li>
+              <li><img src={`${teams[28].logo}`} />{` ${teams[28].name}`}</li>
+              <li><img src={`${teams[27].logo}`} />{` ${teams[27].name}`}</li>
+              <li><img src={`${teams[26].logo}`} />{` ${teams[26].name}`}</li>
+              <li><img src={`${teams[25].logo}`} />{` ${teams[25].name}`}</li>
+              <li><img src={`${teams[24].logo}`} />{` ${teams[24].name}`}</li>
+              <li><img src={`${teams[23].logo}`} />{` ${teams[23].name}`}</li>
+              <li><img src={`${teams[22].logo}`} />{` ${teams[22].name}`}</li>
+              <li><img src={`${teams[21].logo}`} />{` ${teams[21].name}`}</li>
+              <li><img src={`${teams[20].logo}`} />{` ${teams[20].name}`}</li>
+              <li><img src={`${teams[19].logo}`} />{` ${teams[19].name}`}</li>
+              <li><img src={`${teams[18].logo}`} />{` ${teams[18].name}`}</li>
+              <li><img src={`${teams[17].logo}`} />{` ${teams[17].name}`}</li>
+              <li><img src={`${teams[16].logo}`} />{` ${teams[16].name}`}</li>
+              <li><img src={`${teams[15].logo}`} />{` ${teams[15].name}`}</li>
+              <li><img src={`${teams[14].logo}`} />{` ${teams[14].name}`}</li>
+              <li><img src={`${teams[13].logo}`} />{` ${teams[13].name}`}</li>
+              <li><img src={`${teams[12].logo}`} />{` ${teams[12].name}`}</li>
+              <li><img src={`${teams[11].logo}`} />{` ${teams[11].name}`}</li>
+              <li><img src={`${teams[10].logo}`} />{` ${teams[10].name}`}</li>
+              <li><img src={`${teams[9].logo}`} />{` ${teams[9].name}`}</li>
+              <li><img src={`${teams[8].logo}`} />{` ${teams[8].name}`}</li>
+              <li><img src={`${teams[7].logo}`} />{` ${teams[7].name}`}</li>
+              <li><img src={`${teams[6].logo}`} />{` ${teams[6].name}`}</li>
+              <li><img src={`${teams[5].logo}`} />{` ${teams[5].name}`}</li>
+              <li><img src={`${teams[4].logo}`} />{` ${teams[4].name}`}</li>
+              <li><img src={`${teams[3].logo}`} />{` ${teams[3].name}`}</li>
+              <li><img src={`${teams[2].logo}`} />{` ${teams[2].name}`}</li>
+              <li><img src={`${teams[1].logo}`} />{` ${teams[1].name}`}</li>
+              <li><img src={`${teams[0].logo}`} />{` ${teams[0].name}`}</li>
+            </ol>
+          </div>
       )}
     </>
   )
