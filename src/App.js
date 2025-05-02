@@ -127,103 +127,38 @@ Array.prototype.unique = function() {
         </div>
       )}
       { results && (
-        <>
-          <h1>Final Ranking</h1>
-          <ol>
-              <li>{` ${teams[29].name}`}</li>
-              <img src={`${teams[29].logo}`} />
-              <hr />
-              <li>{` ${teams[28].name}`}</li>
-              <img src={`${teams[28].logo}`} />
-              <hr />
-              <li>{` ${teams[27].name}`}</li>
-              <img src={`${teams[27].logo}`} />
-              <hr />
-              <li>{` ${teams[26].name}`}</li>
-              <img src={`${teams[26].logo}`} />
-              <hr />
-              <li>{` ${teams[25].name}`}</li>
-              <img src={`${teams[25].logo}`} />
-              <hr />
-              <li>{` ${teams[24].name}`}</li>
-              <img src={`${teams[24].logo}`} />
-              <hr />
-              <li>{` ${teams[23].name}`}</li>
-              <img src={`${teams[23].logo}`} />
-              <hr />
-              <li>{` ${teams[22].name}`}</li>
-              <img src={`${teams[22].logo}`} />
-              <hr />
-              <li>{` ${teams[21].name}`}</li>
-              <img src={`${teams[21].logo}`} />
-              <hr />
-              <li>{` ${teams[20].name}`}</li>
-              <img src={`${teams[20].logo}`} />
-              <hr />
-              <li>{` ${teams[19].name}`}</li>
-              <img src={`${teams[19].logo}`} />
-              <hr />
-              <li>{` ${teams[18].name}`}</li>
-              <img src={`${teams[18].logo}`} />
-              <hr />
-              <li>{` ${teams[17].name}`}</li>
-              <img src={`${teams[17].logo}`} />
-              <hr />
-              <li>{` ${teams[16].name}`}</li>
-              <img src={`${teams[16].logo}`} />
-              <hr />
-              <li>{` ${teams[15].name}`}</li>
-              <img src={`${teams[15].logo}`} />
-              <hr />
-              <li>{` ${teams[14].name}`}</li>
-              <img src={`${teams[14].logo}`} />
-              <hr />
-              <li>{` ${teams[13].name}`}</li>
-              <img src={`${teams[13].logo}`} />
-              <hr />
-              <li>{` ${teams[12].name}`}</li>
-              <img src={`${teams[12].logo}`} />
-              <hr />
-              <li>{` ${teams[11].name}`}</li>
-              <img src={`${teams[11].logo}`} />
-              <hr />
-              <li>{` ${teams[10].name}`}</li>
-              <img src={`${teams[10].logo}`} />
-              <hr />
-              <li>{` ${teams[9].name}`}</li>
-              <img src={`${teams[9].logo}`} />
-              <hr />
-              <li>{` ${teams[8].name}`}</li>
-              <img src={`${teams[8].logo}`} />
-              <hr />
-              <li>{` ${teams[7].name}`}</li>
-              <img src={`${teams[7].logo}`} />
-              <hr />
-              <li>{` ${teams[6].name}`}</li>
-              <img src={`${teams[6].logo}`} />
-              <hr />
-              <li>{` ${teams[5].name}`}</li>
-              <img src={`${teams[5].logo}`} />
-              <hr />
-              <li>{` ${teams[4].name}`}</li>
-              <img src={`${teams[4].logo}`} />
-              <hr />
-              <li>{` ${teams[3].name}`}</li>
-              <img src={`${teams[3].logo}`} />
-              <hr />
-              <li>{` ${teams[2].name}`}</li>
-              <img src={`${teams[2].logo}`} />
-              <hr />
-              <li>{` ${teams[1].name}`}</li>
-              <img src={`${teams[1].logo}`} />
-              <hr />
-              <li>{` ${teams[0].name}`}</li>
-              <img src={`${teams[0].logo}`} />
-              <hr />
-              <br />
-          </ol>
-          <br />
-        </>
+        <ol>
+          <li>{`${teams[29].name}`}</li>
+          <li>{`${teams[28].name}`}</li>
+          <li>{`${teams[27].name}`}</li>
+          <li>{`${teams[26].name}`}</li>
+          <li>{`${teams[25].name}`}</li>
+          <li>{`${teams[24].name}`}</li>
+          <li>{`${teams[23].name}`}</li>
+          <li>{`${teams[22].name}`}</li>
+          <li>{`${teams[21].name}`}</li>
+          <li>{`${teams[20].name}`}</li>
+          <li>{`${teams[19].name}`}</li>
+          <li>{`${teams[18].name}`}</li>
+          <li>{`${teams[17].name}`}</li>
+          <li>{`${teams[16].name}`}</li>
+          <li>{`${teams[15].name}`}</li>
+          <li>{`${teams[14].name}`}</li>
+          <li>{`${teams[13].name}`}</li>
+          <li>{`${teams[12].name}`}</li>
+          <li>{`${teams[11].name}`}</li>
+          <li>{`${teams[10].name}`}</li>
+          <li>{`${teams[9].name}`}</li>
+          <li>{`${teams[8].name}`}</li>
+          <li>{`${teams[7].name}`}</li>
+          <li>{`${teams[6].name}`}</li>
+          <li>{`${teams[5].name}`}</li>
+          <li>{`${teams[4].name}`}</li>
+          <li>{`${teams[3].name}`}</li>
+          <li>{`${teams[2].name}`}</li>
+          <li>{`${teams[1].name}`}</li>
+          <li>{`${teams[0].name}`}</li>
+        </ol>
       )}
     </>
   )
