@@ -26,8 +26,8 @@ let current2 = 1;
 
 function App() {
 
-const [results, setResults] = useState(true);
-const [options, setOptions] = useState(false);
+const [results, setResults] = useState(false);
+const [options, setOptions] = useState(true);
 
 let [img1, setImg1] = useState(teams[current1].logo);
 let [img2, setImg2] = useState(teams[current2].logo);
