@@ -22,6 +22,10 @@ h1,h2,h3,h4,h5,h6,p{
     width:40em;
 }
 
+.option p{
+    font-size:2em;
+}
+
 .option:hover{
     background: rgb(169, 169, 179);
 }
@@ -108,4 +112,60 @@ ol hr{
     border: black solid 0.01em;
     text-align: center;
     margin-top:3em;
+}
+
+@media only screen and (max-width:1600px){
+    .option{
+        height:30em;
+        width:30em;
+    }
+    .option img{
+        width:12em;
+        height:12em;
+    }
+    .option hr{
+        display:none;
+    }
+}
+
+@media only screen and (max-width:1250px){
+    #options{
+        flex-direction: column;
+        align-items: center;
+    }
+    .option{
+        height:20em;
+        width:20em;
+    }
+    .option img{
+        width:8em;
+        height:8em;
+    }
+    #options p{
+        font-size:1.5em;
+    }
+    .option hr{
+        display:none;
+    }
+}
+
+@media only screen and (max-width:370px){
+    #options{
+        flex-direction: column;
+        align-items: center;
+    }
+    .option{
+        height:18em;
+        width:18em;
+    }
+    .option img{
+        width:6em;
+        height:6em;
+    }
+    #options p{
+        font-size:1em;
+    }
+    .option hr{
+        display:none;
+    }
 }
