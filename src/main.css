@@ -59,11 +59,12 @@ ol{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
+    background-color: rgb(197, 197, 197);
     width:80%;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 1em 1em rgb(185, 96, 0);
+    box-shadow: 2em 1em rgb(185, 96, 0);
+    outline: solid 0.3em white;
 }
  ol img{
     width: 25%;
@@ -74,6 +75,7 @@ ol li{
     font-size:4em;
     font-family: 'Oswald';
     margin:1em;
+    color:rgb(0, 24, 76);
 }
 
 h1{
@@ -81,4 +83,12 @@ h1{
     font-family: "oswald";
     text-align: center;
     margin:0.1em;
+}
+
+ol hr{
+    width: 90%;
+    height: 0;
+    border: black solid 0.01em;
+    text-align: center;
+    margin-top:3em;
 }
