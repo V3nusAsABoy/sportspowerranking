@@ -134,15 +134,15 @@ ol hr{
         align-items: center;
     }
     .option{
-        height:20em;
-        width:20em;
+        height:18em;
+        width:18em;
     }
     .option img{
-        width:8em;
-        height:8em;
+        width:6em;
+        height:6em;
     }
     #options p{
-        font-size:1.5em;
+        font-size:1.3em;
     }
     .option hr{
         display:none;
@@ -175,26 +175,5 @@ ol hr{
     }
     h1{
         font-size:3em;
-    }
-}
-
-@media only screen and (max-width:370px){
-    #options{
-        flex-direction: column;
-        align-items: center;
-    }
-    .option{
-        height:18em;
-        width:18em;
-    }
-    .option img{
-        width:6em;
-        height:6em;
-    }
-    #options p{
-        font-size:1em;
-    }
-    .option hr{
-        display:none;
     }
 }
