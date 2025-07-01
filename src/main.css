@@ -89,6 +89,7 @@ html, body{
 #options{
     display:flex;
     align-items: center;
+    justify-content: center;
     margin:auto;
     width:90vw;
     height:100vh;
