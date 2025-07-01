@@ -5,6 +5,7 @@ body{
     background-image:url('./img/nbachamps.jpg');
     background-color:rgba(0, 24, 76);
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 #body{
