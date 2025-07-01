@@ -15,8 +15,13 @@ body{
     height: 100vh;
 }
 
-h1,h2,h3,h4,h5,h6,p{
+h2,h3,h4,h5,h6,p{
     color:rgb(233, 233, 233);
+}
+
+h1{
+    color:rgb(189, 210, 255);
+    text-shadow: 0.1em 0.1em 0.1em rgb(0, 0, 0);
 }
 
 .option{
@@ -89,21 +94,20 @@ html, body{
     height:100vh;
 }
 
-hr{
-    width:10em;
-}
-
 ol{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(197, 197, 197);
-    width:80%;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 2em 1em rgb(185, 96, 0);
-    outline: solid 0.3em white;
+    background-color: rgba(136, 168, 255, 0.721);
 }
+
+#results{
+    background-color: rgba(0, 0, 0, 0.61);
+    margin:0;
+}
+
  ol img{
     width: 25%;
     align-self: center;
@@ -167,17 +171,6 @@ ol hr{
 }
 
 @media only screen and (max-width: 760px){
-    ol{
-        width:100%;
-        box-shadow: none;
-        outline:none;
-        left:0;
-        right:0;
-        margin:0;
-        border: 0;
-        padding: 1.5em;
-        position:absolute;
-    }
     ol li{
         font-size:3em;
     }
