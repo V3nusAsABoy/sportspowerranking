@@ -4,7 +4,6 @@ body{
     margin: 0;
     background-image:url('./img/nbachamps.jpg');
     background-color:rgba(0, 24, 76);
-    background-size: cover;
     background-attachment: fixed;
 }
 
