@@ -3,7 +3,8 @@
 body{
     margin: 0;
     background-image:url('./img/nbachamps.jpg');
-    background-size: cover;
+    background-size: cover center;
+    background-attachment: fixed;
 }
 
 #body{
@@ -11,6 +12,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color:rgba(0, 24, 76, 0.9);
+    height: 100vh;
 }
 
 h1,h2,h3,h4,h5,h6,p{
