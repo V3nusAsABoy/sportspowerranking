@@ -1,6 +1,7 @@
 import React, { useState} from 'react';
 import data from "./nba.json";
 import './main.css';
+import Results from './Results.js';
 
 class team{
   name;
@@ -26,8 +27,8 @@ let current2 = 1;
 
 function App() {
 
-const [results, setResults] = useState(false);
-const [options, setOptions] = useState(true);
+const [results, setResults] = useState(true);
+const [options, setOptions] = useState(false);
 
 let [img1, setImg1] = useState(teams[current1].logo);
 let [img2, setImg2] = useState(teams[current2].logo);
@@ -119,33 +120,18 @@ Array.prototype.unique = function() {
 
   return (
     <>
-    <div id = "body">
       { options && (
-        <div id = "options">
-          <button class = "option" onClick={firstOption}><img src = {img1}></img><p>{txt1}</p></button>
-          <p id = "or">or</p>
-          <button class = "option" onClick={secondOption}><img src = {img2}></img><p>{txt2}</p></button>
+        <div id = "body">
+          <div id = "options">
+            <button class = "option" onClick={firstOption}><img src = {img1}></img><p>{txt1}</p></button>
+            <p id = "or">or</p>
+            <button class = "option" onClick={secondOption}><img src = {img2}></img><p>{txt2}</p></button>
+          </div>
         </div>
       )}
       { results && (
-        <>
-        <h1>Final Ranking</h1>
-        <ol>
-        {teams.map((t, index) => {
-          return (
-            <>
-              <li>{` ${teams[index].name}`}</li>
-              <img src={`${teams[index].logo}`} />
-              <hr />
-            </>
-          )})
-        }
-        <br />
-        </ol>
-        <br />
-      </>
+        <Results teams={teams}/>
       )}
-      </div>
     </>
   )
 }
