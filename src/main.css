@@ -100,6 +100,7 @@ ol{
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    padding:0;
     background-color: rgba(136, 168, 255, 0.721);
 }
 
@@ -117,6 +118,7 @@ ol li{
     font-size:4em;
     font-family: 'Oswald';
     margin:1em;
+    margin-left: 2em;
 }
 
 h1{
@@ -185,5 +187,15 @@ ol hr{
     }
     h1{
         font-size:3em;
+    }
+}
+
+@media screen and (max-width: 350px){
+    ol{
+        align-items: center;
+        text-align: center;
+    }
+    ol li{
+        font-size: 8vw;
     }
 }
