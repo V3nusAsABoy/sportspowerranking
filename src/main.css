@@ -177,6 +177,10 @@ ol hr{
 }
 
 @media only screen and (max-width: 760px){
+
+    body{
+        background-attachment: scroll;
+    }
     ol li{
         font-size:3em;
     }
