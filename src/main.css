@@ -4,9 +4,10 @@ body{
     margin: 0;
     background-image:url('./img/nbachamps.jpg');
     background-color:rgba(0, 24, 76);
-    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 #body{
@@ -22,8 +23,10 @@ h2,h3,h4,h5,h6,p{
 }
 
 h1{
-    color:rgb(189, 210, 255);
-    text-shadow: 0.1em 0.1em 0.1em rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.778);
+    padding-left:0.25em;
+    padding-right:0.25em;
 }
 
 .option{
@@ -101,27 +104,25 @@ ol{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: auto;
     margin-right: auto;
+    margin-left:auto;
+    text-align: center;
+    height:fit-content;
+    width:35em;
+    list-style-position: inside;
     padding:0;
-    background-color: rgba(136, 168, 255, 0.721);
-}
-
-#results{
-    background-color: rgba(0, 0, 0, 0.61);
-    margin:0;
+    background-color: rgba(136, 168, 255, 0.9);
 }
 
  ol img{
-    width: 25%;
+    width: 1em;
     align-self: center;
  }
 
 ol li{
-    font-size:4em;
+    font-size:1.5em;
+    margin-bottom:1em;
     font-family: 'Oswald';
-    margin:1em;
-    margin-left: 2em;
 }
 
 h1{
@@ -137,6 +138,31 @@ ol hr{
     border: black solid 0.01em;
     text-align: center;
     margin-top:3em;
+}
+
+#copy{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#results{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#results button, #results p{
+    font-size: 2em;
+    font-family:"oswald";
+    padding-left:1em;
+    padding-right:1em;
+}
+
+#results p{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.778);
+    margin-left:1em;
 }
 
 @media only screen and (max-width:1600px){
@@ -176,20 +202,31 @@ ol hr{
 }
 
 @media only screen and (max-width: 760px){
-    ol li{
-        font-size:3em;
-    }
     h1{
         font-size:5em;
     }
 }
 
-@media only screen and (max-width: 500px){
-    ol li{
-        font-size:2em;
+@media screen and (max-width: 650px) {
+    ol{
+        width:100%;
     }
+    
+}
+
+@media only screen and (max-width: 500px){
     h1{
         font-size:3em;
+    }
+
+    #results button, #results p{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 380px){
+    #results button, #results p{
+        font-size: 1.2em;
     }
 }
 
@@ -197,8 +234,5 @@ ol hr{
     ol{
         align-items: center;
         text-align: center;
-    }
-    ol li{
-        font-size: 8vw;
     }
 }
