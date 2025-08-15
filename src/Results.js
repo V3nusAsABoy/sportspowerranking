@@ -4,13 +4,14 @@ const Results = ({teams}) => {
 
     const [copied, setCopied] = useState(false);
 
-    function copy(){
-      
-      const list = teams.map((t, index) => `${index + 1}: ${t.name}\n`);
-
-      navigator.clipboard.writeText(list.join(""));
-
-      setCopied(true);
+    async function copy() {
+      try {
+        const list = teams.map((t, index) => `${index + 1}: ${t.name}\n`);
+        await navigator.clipboard.writeText(list.join(""));
+        setCopied(true);
+      } catch (err) {
+        console.error("Failed to copy:", err);
+      }
     }
 
 
