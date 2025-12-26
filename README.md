@@ -1,7 +1,5 @@
 # NBA Power Rankings
 
-URL: [https://sportspowerrankings.netlify.app/](https://sportspowerrankings.netlify.app/)
-
 A website that helps generates power rankings for NBA teams. It starts by showing 2 NBA teams and the user has to click on which team they believe is better. Afterwards, the next 2 teams are displayed.
 
 ![power ranking](./readmeimg/Screenshot%202025-12-22%20193215.png)
